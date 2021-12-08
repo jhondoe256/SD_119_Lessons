@@ -12,7 +12,7 @@ namespace _03_Classes.Tests
         {
             Person person = new Person();
             person.FirstName = "Andrew";
-            person.LastName = "Torr";
+            person.LastName = "torr";
             person.DateOfBirth = new DateTime(1985, 9, 22);
 
             Vehicle myCar = new Vehicle();
@@ -22,9 +22,11 @@ namespace _03_Classes.Tests
 
             person.Vehicle = myCar;
 
-            Console.WriteLine($"My name is {person.FirstName} and I drive a {person.Vehicle.Make} {person.Vehicle.Model}");
+            Console.WriteLine($"My name is {person.FirstName} {person.LastName} and I drive a {person.Vehicle.Make} {person.Vehicle.Model}");
+            Console.WriteLine($"{person.FirstName} is {person.Age} years old");
 
-            Person otherPerson = new Person();
+            Person otherPerson = new Person("Terry", "Brown", new DateTime(2001, 01, 01));
+
         }
     }
 }

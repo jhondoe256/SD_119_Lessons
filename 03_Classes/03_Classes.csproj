@@ -50,12 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Person.cs" />
+    <Compile Include="Classes\Room.cs" />
     <Compile Include="Classes\Vehicle.cs" />
     <Compile Include="Members\Calculator.cs" />
     <Compile Include="Members\Greeter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\PersonTests.cs" />
     <Compile Include="Tests\GreeterTest.cs" />
+    <Compile Include="Tests\CalculatorTests.cs" />
+    <Compile Include="Tests\RoomTests.cs" />
     <Compile Include="Tests\VehicleTests.cs" />
   </ItemGroup>
   <ItemGroup>

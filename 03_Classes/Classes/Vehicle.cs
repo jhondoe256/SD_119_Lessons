@@ -21,5 +21,53 @@ namespace _03_Classes.Classes
         public string Model { get; set; }
         public double Mileage { get; set; }
         public VehicleType Type { get; set; }
+
+        public bool IsRunning { get; private set; }
+
+        public void TurnOn()
+        {
+            IsRunning = true;
+            Console.WriteLine("You turn the vehicle on.");
+        }
+        public void TurnOff()
+        {
+            IsRunning = false;
+            Console.WriteLine("You turn off the vehicle.");
+        }
+
+
+        // Indicators
+        public Indicator LeftIndicator { get; set; }
+        public Indicator RightIndicator { get; set; }
+
+        public void IndicateRight()
+        {
+            RightIndicator.TurnOn();
+            LeftIndicator.TurnOff();
+        }
+        public void IndicateLeft()
+        {
+            RightIndicator.TurnOff();
+            LeftIndicator.TurnOn();
+        }
+        public void TurnOnHazards()
+        {
+            RightIndicator.TurnOn();
+            LeftIndicator.TurnOn();
+        }
+    }
+
+    public class Indicator
+    {
+        public bool IsFlashing { get; private set; }
+
+        public void TurnOn()
+        {
+            IsFlashing = true;
+        }
+        public void TurnOff()
+        {
+            IsFlashing = false;
+        }
     }
 }

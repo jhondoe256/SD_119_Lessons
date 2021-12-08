@@ -19,6 +19,11 @@ namespace _03_Classes.Tests
 
             Console.WriteLine($"Model: {firstVehicle.Model}");
 
+            firstVehicle.TurnOn();
+            Console.WriteLine($"is it running? {(firstVehicle.IsRunning ? "yes" : "no")}");
+            firstVehicle.TurnOff();
+            Console.WriteLine($"is it running? {firstVehicle.IsRunning}");
+
             Vehicle secondVehicle = new Vehicle();
             secondVehicle.Type = VehicleType.Spaceship;
 
