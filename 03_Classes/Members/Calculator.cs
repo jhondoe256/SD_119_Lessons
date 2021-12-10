@@ -31,6 +31,32 @@ namespace _03_Classes.Members
             // e.g. 5+5, user.IsAdmin && loggedIn
         }
 
+
+        // New method: Add All
+        public double AddAll(double[] numbers)
+        {
+            double total = 0;
+            foreach (double num in numbers)
+            {
+                total += num;
+            }
+            return total;
+        }
+
+        public double Average(double[] sdfdfgsdfgfds)
+        {
+            if (sdfdfgsdfgfds.Length == 0)
+            {
+                return 0;
+            }
+
+            double sum = AddAll(sdfdfgsdfgfds);
+
+            double average = sum / sdfdfgsdfgfds.Length;
+            return average;
+        }
+
+
         // CHALLENGE: Create the following methods:
         // Multiply
         public double Multiply(double numOne, double numTwo)
