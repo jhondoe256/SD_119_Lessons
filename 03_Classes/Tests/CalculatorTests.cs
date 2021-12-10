@@ -16,5 +16,23 @@ namespace _03_Classes.Tests
             Console.WriteLine(quotient);
             Console.WriteLine(calc.DivideMixed(10, 3));
         }
+
+        [TestMethod]
+        public void NewMethodsTest()
+        {
+            Calculator calc = new Calculator();
+
+            double[] fibonacci = { 1, 1, 2, 3, 5, 8, 13, 21 };
+
+            double sum = calc.AddAll(fibonacci);
+            Console.WriteLine($"Sum: {sum}");
+
+            double avg = calc.Average(fibonacci);
+            Console.WriteLine($"Average: {avg}");
+
+            double[] empty = { };
+            Console.WriteLine($"Average 2: {calc.Average(empty)}");
+
+        }
     }
 }
