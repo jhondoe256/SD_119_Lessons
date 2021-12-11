@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Conditionals", "04_Condi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Loops", "05_Loops\05_Loops.csproj", "{E4CB92BE-4F64-4A58-88DC-89E5D715D263}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Inheritance_Classes", "06_Inheritance_Classes\06_Inheritance_Classes.csproj", "{51A74D12-E63E-44B6-AF39-A78CFA2CE125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Inheritance_Tests", "07_Inheritance_Tests\07_Inheritance_Tests.csproj", "{ADF16282-2E90-4103-BEF3-020136DE9FB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{E4CB92BE-4F64-4A58-88DC-89E5D715D263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4CB92BE-4F64-4A58-88DC-89E5D715D263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4CB92BE-4F64-4A58-88DC-89E5D715D263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A74D12-E63E-44B6-AF39-A78CFA2CE125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A74D12-E63E-44B6-AF39-A78CFA2CE125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A74D12-E63E-44B6-AF39-A78CFA2CE125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A74D12-E63E-44B6-AF39-A78CFA2CE125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF16282-2E90-4103-BEF3-020136DE9FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF16282-2E90-4103-BEF3-020136DE9FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF16282-2E90-4103-BEF3-020136DE9FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF16282-2E90-4103-BEF3-020136DE9FB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
