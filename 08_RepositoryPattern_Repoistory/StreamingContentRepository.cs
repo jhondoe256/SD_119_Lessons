@@ -9,7 +9,10 @@ namespace _08_RepositoryPattern_Repoistory
     //This is our fake database
     public class StreamingContentRepository
     {
-        private readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
+        // private means only accessible in this class
+        // protected is like private+ - it includes derived/child/inherited classes
+        protected readonly List<StreamingContent> _contentDirectory = new List<StreamingContent>();
+
 
         //Create
         public bool AddContentToDirectory(StreamingContent content)
@@ -41,6 +44,27 @@ namespace _08_RepositoryPattern_Repoistory
 
             //return _contentDirectory.Where(cd => cd.TypeOfGenere == genereType).ToList();
         }
+
+
+        // CHALENGE:
+        // Make a GetFamilyFriendlyContents() method
+        public List<StreamingContent> GetFamilyFriendlyContents()
+        {
+            List<StreamingContent> familyFriendlyContents = new List<StreamingContent>();
+            foreach (StreamingContent content in _contentDirectory)
+            {
+                if (content.IsFamilyFriendly)
+                {
+                    familyFriendlyContents.Add(content);
+                }
+            }
+            return familyFriendlyContents;
+        }
+
+
+
+
+
         //Read(unique identifier)
         //Helper method
         public StreamingContent GetContentByTitle(string title)
@@ -54,6 +78,8 @@ namespace _08_RepositoryPattern_Repoistory
             }
             //if it gets here and hasn't found anything...
             return null;
+
+            return _contentDirectory.FirstOrDefault(sc => sc.Title == title);
         }
         //Update
         public bool UpdateExistingContent(string originalTitle, StreamingContent content)
