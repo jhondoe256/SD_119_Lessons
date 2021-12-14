@@ -69,7 +69,8 @@ namespace _09_StreamingContent_Inheritance
         // GetFamilyFriendlyShows()
         public List<Show> GetFamilyFriendlyShows()
         {
-            return (List<Show>) _contentDirectory.Where(sc => sc is Show && sc.IsFamilyFriendly);
+            // NO: double cast doesn't work like this
+            // return (List<Show>) _contentDirectory.Where(sc => sc is Show && sc.IsFamilyFriendly);
 
             return GetAllShows().Where(s => s.IsFamilyFriendly).ToList();
         }
