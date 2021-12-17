@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepositoryPattern_Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_StreamingContent_Inheritance", "09_StreamingContent_Inheritance\09_StreamingContent_Inheritance.csproj", "{50F59142-7775-407F-87F8-23B201D6A9F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interfaces_Introduction", "10_Interfaces_Introduction\10_Interfaces_Introduction.csproj", "{4A6ED255-3DAC-4517-A8B8-B2F837FF05C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Interfaces_WorkingWithDI", "10_Interfaces_WorkingWithDI\10_Interfaces_WorkingWithDI.csproj", "{DFF1B4AF-2C13-43DE-BD4B-BA615406CB60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{50F59142-7775-407F-87F8-23B201D6A9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50F59142-7775-407F-87F8-23B201D6A9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50F59142-7775-407F-87F8-23B201D6A9F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6ED255-3DAC-4517-A8B8-B2F837FF05C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6ED255-3DAC-4517-A8B8-B2F837FF05C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6ED255-3DAC-4517-A8B8-B2F837FF05C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6ED255-3DAC-4517-A8B8-B2F837FF05C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF1B4AF-2C13-43DE-BD4B-BA615406CB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF1B4AF-2C13-43DE-BD4B-BA615406CB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF1B4AF-2C13-43DE-BD4B-BA615406CB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF1B4AF-2C13-43DE-BD4B-BA615406CB60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

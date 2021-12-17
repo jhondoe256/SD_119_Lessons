@@ -71,7 +71,7 @@ namespace _09_StreamingContent_Inheritance
         {
             return (List<Show>) _contentDirectory.Where(sc => sc is Show && sc.IsFamilyFriendly);
 
-            return GetAllShows().Where(s => s.IsFamilyFriendly).ToList();
+           // return GetAllShows().Where(s => s.IsFamilyFriendly).ToList();
         }
     }
 }
