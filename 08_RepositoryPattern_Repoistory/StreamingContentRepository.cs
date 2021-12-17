@@ -71,7 +71,7 @@ namespace _08_RepositoryPattern_Repoistory
         {
             foreach (StreamingContent content in _contentDirectory)
             {
-                if (content.Title.ToLower()==title.ToLower())
+                if (content.Title.ToLower().Trim()==title.ToLower().Trim())
                 {
                     return content;
                 }
@@ -102,7 +102,7 @@ namespace _08_RepositoryPattern_Repoistory
             }
         }
         //Delete
-        public bool DeleteExsistingContent(StreamingContent existingContent)
+        public bool DeleteExistingContent(StreamingContent existingContent)
         {
             bool deleteResult = _contentDirectory.Remove(existingContent);
             return deleteResult;

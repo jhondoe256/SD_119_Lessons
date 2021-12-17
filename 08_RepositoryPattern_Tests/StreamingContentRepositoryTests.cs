@@ -123,7 +123,7 @@ namespace _08_RepositoryPattern_Tests
             StreamingContent content = _repo.GetContentByTitle("Rubber");
 
             //Act
-            bool removeResult = _repo.DeleteExsistingContent(content);
+            bool removeResult = _repo.DeleteExistingContent(content);
 
             //Assert
             Assert.IsTrue(removeResult);
